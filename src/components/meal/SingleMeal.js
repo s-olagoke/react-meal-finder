@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { useContext } from 'react';
 import MealContext from '../../context/meal/mealContext';
 
+import { Link } from 'react-router-dom';
+
 const SingleMeal = ({ match }) => {
   const mealContext = useContext(MealContext);
 
@@ -26,6 +28,9 @@ const SingleMeal = ({ match }) => {
   return (
     <div className="row mt-1">
       <div className="container">
+        <Link to="/" className="btn btn-outline-dark btn-block btn-sm mb-1">
+          Back to Search
+        </Link>
         <div className="col-m6-6 text-center">
           <img
             src={meal.strMealThumb}
