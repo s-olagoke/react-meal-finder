@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './components/layout/Navbar';
 import { Switch, Route } from 'react-router-dom';
+import './App.css';
 
 import SingleMeal from './components/meal/SingleMeal';
 import Home from './components/pages/Home';

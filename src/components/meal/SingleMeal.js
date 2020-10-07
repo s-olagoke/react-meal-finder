@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useContext } from 'react';
 import MealContext from '../../context/meal/mealContext';
 
@@ -24,8 +24,8 @@ const SingleMeal = ({ match }) => {
   }
 
   return (
-    <div className="row mt-4">
-      <Fragment>
+    <div className="row mt-1">
+      <div className="container">
         <div className="col-m6-6 text-center">
           <img
             src={meal.strMealThumb}
@@ -55,7 +55,7 @@ const SingleMeal = ({ match }) => {
           <h3 className="mt-3">Instructions</h3>
           <p>{meal.strInstructions}</p>
         </div>
-      </Fragment>
+      </div>
     </div>
   );
 };
